@@ -1,0 +1,65 @@
+<section data-ng-controller="ProfilesController" data-ng-init="find()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>List Profile</h2>
+      <ol class="breadcrumb">
+        <li>
+          <a href="#!/">Home</a>
+        </li>
+        <li class="active">
+          <strong>List Profile</strong>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="wrapper wrapper-content animated fadeInRight">
+    <div class="alert alert-warning text-center" data-ng-hide="!profiles.$resolved || profiles.length">
+      No Profiles yet, why don't you <a href="/#!/profiles/create">create one</a>?
+    </div>  
+    <div class="row" data-ng-show="profiles.length>0">
+      <div class="col-sm-8">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Profiles ({{profiles.length}})</h5>
+            <div class="ibox-tools">
+              <a href="/#!/profiles/create" class="btn btn-primary btn-xs">Create</a>
+            </div>
+          </div>
+            
+          <div class="ibox-content">
+            <div class="input-group">
+              <input type="text" placeholder="Search profile" class="input form-control">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
+              </span>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    
+                    <th>Profile Name</th>
+                    
+                    <th>Selected Security Role</th>
+                    
+                </tr>
+                </thead>
+                <tbody>
+                <tr data-ng-repeat="profile in profiles">
+                    
+                    <td>{{ profile.profileName }}</td>
+                    
+                    <td>{{ profile.selectedSecurityRole }}</td>
+                    
+                    
+                    <td><a class="glyphicon glyphicon-edit" href="/#!/profiles/{{profile._id}}/edit"></a></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

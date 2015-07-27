@@ -1,0 +1,71 @@
+<section class="content-header" data-ng-controller="JobsController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>View Job</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/jobs">Job</a>
+          </li>
+          <li class="active">
+            <strong>View Job</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+</section>  
+<section class="content">
+  <!-- general form elements -->
+  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
+    <div class="box-body">
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/jobs/{{job._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal">
+            
+            <dt>Client</dt><dd>{{ job.client }}</dd>
+            
+            <dt>Job Type</dt><dd>{{ job.jobType }}</dd>
+            
+            <dt>Period Ended</dt><dd>{{ job.periodEnded }}</dd>
+            
+            <dt>Entities</dt><dd>{{ job.entities }}</dd>
+            
+            <dt>Branch Location</dt><dd>{{ job.branchLocation }}</dd>
+            
+            <dt>Job Owner</dt><dd>{{ job.jobOwner }}</dd>
+            
+            <dt>Currently Responsible</dt><dd>{{ job.currentlyResponsible }}</dd>
+            
+            <dt>Target End Date</dt><dd>{{ job.targetEndDate }}</dd>
+            
+            <dt>Job Status</dt><dd>{{ job.jobStatus }}</dd>
+            
+            <dt>Priority</dt><dd>{{ job.priority }}</dd>
+            
+            <dt>Job Details</dt><dd>{{ job.jobDetails }}</dd>
+            
+            <dt>Opening Wip</dt><dd>{{ job.openingWip }}</dd>
+            
+            <dt>Opening Wipdescription</dt><dd>{{ job.openingWipdescription }}</dd>
+            
+            <dt>Agreed Fee</dt><dd>{{ job.agreedFee }}</dd>
+            
+            <dt>Budget Total</dt><dd>{{ job.budgetTotal }}</dd>
+            
+          </dl>
+        </div>
+      </div>
+      
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+<section>

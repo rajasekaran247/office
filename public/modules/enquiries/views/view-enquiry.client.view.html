@@ -1,0 +1,63 @@
+<section class="content-header" data-ng-controller="EnquiriesController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>View Enquiry</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/enquiries">Enquiry</a>
+          </li>
+          <li class="active">
+            <strong>View Enquiry</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+</section>  
+<section class="content">
+  <!-- general form elements -->
+  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
+    <div class="box-body">
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/enquiries/{{enquiry._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal">
+            
+            <dt>Enquiry No</dt><dd>{{ enquiry.enquiryNo }}</dd>
+            
+            <dt>Enquiry Date</dt><dd>{{ enquiry.enquiryDate }}</dd>
+            
+            <dt>Client Name</dt><dd>{{ enquiry.clientName }}</dd>
+            
+            <dt>Handling Resource</dt><dd>{{ enquiry.handlingResource }}</dd>
+            
+            <dt>Area Of Enquiry</dt><dd>{{ enquiry.areaOfEnquiry }}</dd>
+            
+            <dt>Mode Of Receipt</dt><dd>{{ enquiry.modeOfReceipt }}</dd>
+            
+            <dt>Billable</dt><dd>{{ enquiry.billable }}</dd>
+            
+            <dt>Status</dt><dd>{{ enquiry.status }}</dd>
+            
+            <dt>Group Affilation</dt><dd>{{ enquiry.groupAffilation }}</dd>
+            
+            <dt>Prepared By</dt><dd>{{ enquiry.preparedBy }}</dd>
+            
+            <dt>Remarks</dt><dd>{{ enquiry.remarks }}</dd>
+            
+          </dl>
+        </div>
+      </div>
+      
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+<section>

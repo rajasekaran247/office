@@ -1,0 +1,144 @@
+<section data-ng-controller="JobsController" data-ng-init="findOne()">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>Edit Job</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/jobs">Job</a>
+          </li>
+          <li class="active">
+            <strong>Edit Job</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="update()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="client">Client</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.client" id="client" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="jobType">Job Type</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.jobType" id="jobType" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="periodEnded">Period Ended</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="job.periodEnded" id="periodEnded" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="entities">Entities</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.entities" id="entities" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="branchLocation">Branch Location</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.branchLocation" id="branchLocation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="jobOwner">Job Owner</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.jobOwner" id="jobOwner" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="targetEndDate">Target End Date</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="job.targetEndDate" id="targetEndDate" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="jobStatus">Job Status</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.jobStatus" id="jobStatus" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="priority">Priority</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.priority" id="priority" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="jobDetails">Job Details</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.jobDetails" id="jobDetails" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="openingWip">Opening Wip</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.openingWip" id="openingWip" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="openingWipdescription">Opening Wipdescription</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.openingWipdescription" id="openingWipdescription" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="agreedFee">Agreed Fee</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="job.agreedFee" id="agreedFee" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="budgettotal">Budget Total</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="job.budgetTotal" id="budgettotal" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="currentlyresponsible">Currently Responsible</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job.currentlyResponsible" id="currentlyresponsible" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" value="Update" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

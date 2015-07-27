@@ -1,0 +1,115 @@
+<section class="content-header" data-ng-controller="ContactsController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>View Contact</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/contacts">Contact</a>
+          </li>
+          <li class="active">
+            <strong>View Contact</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+</section>  
+<section class="content">
+  <!-- general form elements -->
+  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
+    <div class="box-body">
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/contacts/{{contact._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal">
+            
+            <dt>Name</dt><dd>{{ contact.name }}</dd>
+            
+            <dt>Code</dt><dd>{{ contact.code }}</dd>
+            
+            <dt>Type</dt><dd>{{ contact.type }}</dd>
+            
+            <dt>Contact Type</dt><dd>{{ contact.contactType }}</dd>
+            
+            <dt>Mailing Name</dt><dd>{{ contact.mailingName }}</dd>
+            
+            <dt>Salutation</dt><dd>{{ contact.salutation }}</dd>
+            
+            <dt>TAN</dt><dd>{{ contact.tan }}</dd>
+            
+            <dt>PAN</dt><dd>{{ contact.pan }}</dd>
+            
+            <dt>TIN</dt><dd>{{ contact.tin }}</dd>
+            
+            <dt>Service Tax Number</dt><dd>{{ contact.serviceTaxNumber }}</dd>
+            
+            <dt>Assigned To Partner</dt><dd>{{ contact.assignedToPartner }}</dd>
+            
+            <dt>Assigned To Manager</dt><dd>{{ contact.assignedToManager }}</dd>
+            
+            <dt>Assigned To Entities</dt><dd>{{ contact.assignedToEntities }}</dd>
+            
+            <dt>Assigned To Branch Location</dt><dd>{{ contact.assignedToBranchLocation }}</dd>
+            
+            <dt>Postal Address Addressee</dt><dd>{{ contact.postalAddressAddressee }}</dd>
+            
+            <dt>Postal Address Address</dt><dd>{{ contact.postalAddressAddress }}</dd>
+            
+            <dt>Postal Address City</dt><dd>{{ contact.postalAddressCity }}</dd>
+            
+            <dt>Postal Address State</dt><dd>{{ contact.postalAddressState }}</dd>
+            
+            <dt>Postal Address Postcode</dt><dd>{{ contact.postalAddressPostcode }}</dd>
+            
+            <dt>Postal Address Country</dt><dd>{{ contact.postalAddressCountry }}</dd>
+            
+            <dt>Communications Work Phone</dt><dd>{{ contact.communicationsWorkPhone }}</dd>
+            
+            <dt>Communications Mobile</dt><dd>{{ contact.communicationsMobile }}</dd>
+            
+            <dt>Communications Skype</dt><dd>{{ contact.communicationsSkype }}</dd>
+            
+            <dt>Communications Home Phone</dt><dd>{{ contact.communicationsHomePhone }}</dd>
+            
+            <dt>Communications Fax</dt><dd>{{ contact.communicationsFax }}</dd>
+            
+            <dt>Communications Twitter</dt><dd>{{ contact.communicationsTwitter }}</dd>
+            
+            <dt>Communications Email</dt><dd>{{ contact.communicationsEmail }}</dd>
+            
+            <dt>Communications Linkedin</dt><dd>{{ contact.communicationsLinkedin }}</dd>
+            
+            <dt>Communications Website</dt><dd>{{ contact.communicationsWebsite }}</dd>
+            
+            <dt>Contact Tax Year End</dt><dd>{{ contact.contactTaxYearEnd }}</dd>
+            
+            <dt>Contact Client Type</dt><dd>{{ contact.contactClientType }}</dd>
+            
+            <dt>Contact Client Type Subcategory</dt><dd>{{ contact.contactClientTypeSubcategory }}</dd>
+            
+            <dt>Noof Employees</dt><dd>{{ contact.noofEmployees }}</dd>
+            
+            <dt>In Business Since</dt><dd>{{ contact.inBusinessSince }}</dd>
+            
+            <dt>Annual Accounts Scheduling</dt><dd>{{ contact.annualAccountsScheduling }}</dd>
+            
+            <dt>Client History From</dt><dd>{{ contact.clientHistoryFrom }}</dd>
+            
+            <dt>Client History Until</dt><dd>{{ contact.clientHistoryUntil }}</dd>
+            
+          </dl>
+        </div>
+      </div>
+      
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+<section>

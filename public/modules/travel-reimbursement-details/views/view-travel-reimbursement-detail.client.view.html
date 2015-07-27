@@ -1,0 +1,61 @@
+<section class="content-header" data-ng-controller="TravelReimbursementDetailsController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>View Travel Reimbursement Detail</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/travel-reimbursement-details">TravelReimbursementDetail</a>
+          </li>
+          <li class="active">
+            <strong>View Travel Reimbursement Detail</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+</section>  
+<section class="content">
+  <!-- general form elements -->
+  <div class="box box-primary" data-ng-show="((authentication.user) && (authentication.user._id == leave.user._id))">
+    <div class="box-body">
+      <div class="pull-right" >
+        <a class="btn btn-primary" href="/#!/travel-reimbursement-details/{{travelreimbursementdetail._id}}/edit">
+          <i class="glyphicon glyphicon-edit"></i>
+        </a>
+        <a class="btn btn-primary" data-ng-click="remove();">
+          <i class="glyphicon glyphicon-trash"></i>
+        </a>
+      </div>    
+      <div class="row">
+        <div class="col-md-4">
+          <dl class="dl-horizontal">
+            
+            <dt>Sno</dt><dd>{{ travelreimbursementdetail.sno }}</dd>
+            
+            <dt>Client Location</dt><dd>{{ travelreimbursementdetail.clientLocation }}</dd>
+            
+            <dt>Job Number</dt><dd>{{ travelreimbursementdetail.jobNumber }}</dd>
+            
+            <dt>From Date</dt><dd>{{ travelreimbursementdetail.fromDate }}</dd>
+            
+            <dt>To Date</dt><dd>{{ travelreimbursementdetail.toDate }}</dd>
+            
+            <dt>No Of Days</dt><dd>{{ travelreimbursementdetail.noOfDays }}</dd>
+            
+            <dt>Conveyance</dt><dd>{{ travelreimbursementdetail.conveyance }}</dd>
+            
+            <dt>Food Allowance</dt><dd>{{ travelreimbursementdetail.foodAllowance }}</dd>
+            
+            <dt>Other Expenses</dt><dd>{{ travelreimbursementdetail.otherExpenses }}</dd>
+            
+            <dt>Total Amount</dt><dd>{{ travelreimbursementdetail.totalAmount }}</dd>
+            
+          </dl>
+        </div>
+      </div>
+      
+    </div><!-- /.box-body -->
+  </div><!-- /.box -->
+<section>

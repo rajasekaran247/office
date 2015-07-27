@@ -1,0 +1,81 @@
+<section data-ng-controller="TimesheetsController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>Create Timesheet</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/timesheets">Timesheet</a>
+          </li>
+          <li class="active">
+            <strong>Create Timesheet</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="create()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="selectentrytype">Select Entry Type</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="selectEntryType" id="selectentrytype" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="job">Job</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="job" id="job" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="startTime">Start Time</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="startTime" id="startTime" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="endTime">End Time</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="endTime" id="endTime" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="activityCode">Activity Code</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="activityCode" id="activityCode" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="comment">Comment</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="comment" id="comment" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+                 
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

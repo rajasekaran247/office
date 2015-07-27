@@ -1,0 +1,298 @@
+<section data-ng-controller="ContactsController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>Create Contact</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/contacts">Contact</a>
+          </li>
+          <li class="active">
+            <strong>Create Contact</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="create()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="name" id="name" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="code">Code</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="code" id="code" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="type">Type</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="type" id="type" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="contactType">Contact Type</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="contactType" id="contactType" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="mailingName">Mailing Name</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="mailingName" id="mailingName" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="salutation">Salutation</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="salutation" id="salutation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="tan">TAN</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="tan" id="tan" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="pan">PAN</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="pan" id="pan" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="tin">TIN</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="tin" id="tin" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="serviceTaxNumber">Service Tax Number</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="serviceTaxNumber" id="serviceTaxNumber" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="assignedToPartner">Assigned To Partner</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="assignedToPartner" id="assignedToPartner" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="assignedToManager">Assigned To Manager</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="assignedToManager" id="assignedToManager" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="assignedToEntities">Assigned To Entities</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="assignedToEntities" id="assignedToEntities" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="assignedToBranchLocation">Assigned To Branch Location</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="assignedToBranchLocation" id="assignedToBranchLocation" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressAddressee">Postal Address Addressee</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="postalAddressAddressee" id="postalAddressAddressee" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressAddress">Postal Address Address</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="postalAddressAddress" id="postalAddressAddress" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressCity">Postal Address City</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="postalAddressCity" id="postalAddressCity" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressState">Postal Address State</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="postalAddressState" id="postalAddressState" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressPostcode">Postal Address Postcode</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="postalAddressPostcode" id="postalAddressPostcode" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="postalAddressCountry">Postal Address Country</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="postalAddressCountry" id="postalAddressCountry" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsWorkPhone">Communications Work Phone</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="communicationsWorkPhone" id="communicationsWorkPhone" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsMobile">Communications Mobile</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="communicationsMobile" id="communicationsMobile" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsSkype">Communications Skype</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="communicationsSkype" id="communicationsSkype" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsHomePhone">Communications Home Phone</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="communicationsHomePhone" id="communicationsHomePhone" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsFax">Communications Fax</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="communicationsFax" id="communicationsFax" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsTwitter">Communications Twitter</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="communicationsTwitter" id="communicationsTwitter" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsEmail">Communications Email</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="communicationsEmail" id="communicationsEmail" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsLinkedin">Communications Linkedin</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="communicationsLinkedin" id="communicationsLinkedin" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="communicationsWebsite">Communications Website</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="communicationsWebsite" id="communicationsWebsite" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="contactTaxYearEnd">Contact Tax Year End</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="contactTaxYearEnd" id="contactTaxYearEnd" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="contactClientType">Contact Client Type</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="contactClientType" id="contactClientType" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="contactClientTypeSubcategory">Contact Client Type Subcategory</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="contactClientTypeSubcategory" id="contactClientTypeSubcategory" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="noofEmployees">Noof Employees</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="noofEmployees" id="noofEmployees" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="inBusinessSince">In Business Since</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="inBusinessSince" id="inBusinessSince" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="annualAccountsScheduling">Annual Accounts Scheduling</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="annualAccountsScheduling" id="annualAccountsScheduling" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="clientHistoryFrom">Client History From</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="clientHistoryFrom" id="clientHistoryFrom" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="clientHistoryUntil">Client History Until</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="clientHistoryUntil" id="clientHistoryUntil" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+                 
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

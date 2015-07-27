@@ -1,0 +1,116 @@
+<section data-ng-controller="NotesController">
+  <div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+      <h2>Create Notes</h2>
+        <ol class="breadcrumb">
+          <li>
+            <a href="#!/">Home</a>
+          </li>
+          <li>
+            <a href="#!/notes">Notes</a>
+          </li>
+          <li class="active">
+            <strong>Create Notes</strong>
+          </li> 
+        </ol>            
+    </div>
+  </div>
+  <div class="ibox float-e-margins">
+    <div class="ibox-content">
+      <div class="row">
+        <form data-ng-submit="create()" novalidate>
+          <fieldset>
+            <div class="row">
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="jobId">Job Id</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="jobId" id="jobId" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="notesDate">Notes Date</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="notesDate" id="notesDate" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="category">Category</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="category" id="category" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="note">Note</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="note" id="note" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="remindOn">Remind On</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="remindOn" id="remindOn" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="reminderEmailAddress">Reminder Email Address</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="reminderEmailAddress" id="reminderEmailAddress" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="repeatReminderYear">Repeat Reminder Year</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="repeatReminderYear" id="repeatReminderYear" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="repeatReminderMonth">Repeat Reminder Month</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="repeatReminderMonth" id="repeatReminderMonth" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="repeatReminderDays">Repeat Reminder Days</label>
+                <div class="controls">
+                  <input type="Number" data-ng-model="repeatReminderDays" id="repeatReminderDays" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="repeatReminderEndBy">Repeat Reminder End By</label>
+                <div class="controls">
+                  <input type="Date" data-ng-model="repeatReminderEndBy" id="repeatReminderEndBy" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+            
+              <div class="col-md-3 form-group">
+                <label class="control-label" for="createdBy">Created By</label>
+                <div class="controls">
+                  <input type="Text" data-ng-model="createdBy" id="createdBy" class="form-control" placeholder="" required />
+                </div>
+              </div>    
+                 
+            </div>
+            <div class="row">
+              <div data-ng-show="error" class="text-danger">
+                <strong data-ng-bind="error"></strong>
+              </div>               
+              <div class="col-md-2 form-group">
+                <input type="submit" class="btn btn-primary" />
+              </div>              
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
